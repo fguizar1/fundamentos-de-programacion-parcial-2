@@ -1,0 +1,8 @@
+# presentacion
+## pobelmas resueltos en clase con diagramas de flujo 
+### Ejercicio 1. (wHILE) Contar de el 1 hasta el 10 y sumar los valores.
+#### 1.1 Analisis 
+se requiere un inicio para despues tener un contador que sea igual a 1 y una suma que sea igual a 0 estos seran nuestras variantes, 
+para despues tener una condicion si c<=10 si es si entonces s= c+s y despues tener quec=c+1 para despues volver a pedir la suma de el
+contador mas la suma y asi hasta llegar a 10 y si la condicion es no se imprime la suma y damos fin.
+### 1.2 Diagrama 
