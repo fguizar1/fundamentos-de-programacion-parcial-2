@@ -61,3 +61,304 @@ se utiliza un inicio para despues tener que la suma = 0 despues tener un for que
 para despues hacer el rpoceso de s=s+i y serguir con el cilco y posteirorimente imprimir la suma y dar fin 
 #### 2.2 Diagrama 
 [![DFD2-P2-for.png](https://i.postimg.cc/PfYYYHdr/DFD2-P2-for.png)](https://postimg.cc/mhZPW0c0)
+#### 2.3 Entradas 
+Entrada de una variante que sea una suma igual a 0 
+#### 2.4 Salidas 
+La impresión de la suma 
+#### 2.5 Codigo 
+void main(List<String> args) {
+  int s = 0;
+  for (var i = 2; i <= 10; i = i + 2) {
+    s = s + i;
+  }
+  print("resultado de la suma de numeros pares es:$s");
+} //For
+### 2.6 (WHILE) 
+#### 2.7 Diagrama 
+[![DFD2-P2-while.png](https://i.postimg.cc/y6cHxSc1/DFD2-P2-while.png)](https://postimg.cc/Z0bgDnw2)
+#### 2.8 Entradas 
+Una entrada de una suma =0 y un contador =1
+#### 2.9 Salidas
+La imresion de la suma 
+#### 2.10 Codigo
+void main(List<String> args) {
+  int s = 0, c = 1;
+
+  do {
+    s = s + c * 2;
+    c = c + 1;
+  } while (c <= 5);
+  print("la suma de numeros pares es:$s");
+} //Do While
+### 2.11 (DO/WHILE)
+#### 2.12 Diagrama 
+[![DFD2-P2-do-while.png](https://i.postimg.cc/y8v3D82d/DFD2-P2-do-while.png)](https://postimg.cc/Mnfp4q62)
+#### 2.13 Entradas 
+Una entrada de una suma =0 y un contador =1
+#### 2.14 Salidas 
+La impresion de la suma 
+#### 2.15 Codigo 
+void main(List<String> args) {
+  int s = 0, c = 1;
+  while (c <= 5) {
+    s = s + c * 2;
+    c = c + 1;
+  }
+  print("resultado de la suma de numeros pares:$s");
+} //While
+#### Ejercicio 3 (FOR) Almanece en un array el numero n leido en el teclado, el tamaño de el array es 10 
+### 3.1 Analisis 
+se requiere de un inicio para despues tener un array de 10 y asi pedir un numero y tener en el ciclo de for que 
+i=o;i<=9;i++ y despues tener un proceso que diga que A[i]=N y repetir el ciclo for y asi imprimer A y dar fin 
+### 3.2 Diagrama 
+[![DFD3-P2-for.png](https://i.postimg.cc/05DTPMJp/DFD3-P2-for.png)](https://postimg.cc/PNf3Mqyx)
+### 3.3 Entradas
+un array de 10 
+### 3.4 Salidas 
+la impresion de el array 
+### 3.5 Codigo 
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  for (var i = 0; i <= 9; i++) {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int n = int.parse(s);
+      arra[i] = n;
+    }
+  }
+  stdout.write("aqui esta la lista, $arra");
+}
+#### 3.6 (WHILE) 
+### 3.7 Diagrama 
+[![DFD3-P2-while.png](https://i.postimg.cc/Gt92ZFXn/DFD3-P2-while.png)](https://postimg.cc/hQWcmdF2)
+### 3.8 Entradas 
+un array de 10 
+### 3.9 Salidas 
+la impresion de el array 
+### 3.10 Codigo 
+import 'dart:io';
+
+//Leer 10 numeros del teclado y ponerlos en una lista.
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  int i = 0;
+  while (i <= 9) {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int ner = int.parse(s);
+      arra[i] = ner;
+    }
+    i++;
+  }
+  stdout.write("Tu lista es, $arra ");
+}
+
+#### 3.11 (DO/WHIEL)
+### 3.12 Diagrama 
+[![DFD3-P2-do-while.png](https://i.postimg.cc/PxTKzx2w/DFD3-P2-do-while.png)](https://postimg.cc/DWpq72Vv)
+### 3.13 Entrads 
+un array de 10 
+### 3.14 Salidas
+la impresion de el array 
+### 3.15 Codigo 
+import 'dart:io';
+
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  int i = 0;
+  do {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int n = int.parse(s);
+      arra[i] = n;
+      i++;
+    }
+  } while (i <= 9);
+  stdout.write("Tu lista es $arra ");
+}
+#### Ejercicio 4 (FOR) Almacene los N numeros leidos de el teclado en un vector de N elementos 
+### 4.1 Analisis 
+se requiere un inicio para poder almacenar un vector de 10 para posteriormente que nos den el nuemro 
+y asi tener que si i=0;i<=9;i++ para despues tener un proceso de A[i]=N y asi seguir cn el ciclo 
+y despues dar la impresion de el vector 
+### 4.2 Diagrama
+[![DFD4-P2-for.png](https://i.postimg.cc/sgpZsJ4p/DFD4-P2-for.png)](https://postimg.cc/5X2tmLG0)
+### 4.3 Entradas
+se necesita una entrada de un array de 10
+### 4.4 Salidas 
+la impresion de el array 
+### 4.5 Codigo 
+
+#### 4.6 (WHILE)
+### 4.7 Diagrama 
+[![DFD4-P2-while.png](https://i.postimg.cc/LXLH1mNw/DFD4-P2-while.png)](https://postimg.cc/8JkQ8g8m)
+### 4.8 Entradas 
+un array de 10 
+### 4.9 Salidas
+la impresion de el array 
+### 4.10 Codigo 
+
+#### 4.11 (DO/WHILE)
+### 4.12 Diagrama 
+[![DFD4-P2-do-while.png](https://i.postimg.cc/jdGZ8KXZ/DFD4-P2-do-while.png)](https://postimg.cc/dLj21bgy)
+### 4.13 Entradas 
+la entrada de un array de 10 
+### 4.14 Salidas 
+la impresion de el array 
+### 4.15 Codigo 
+
+#### Ejercicio 5 Almanece un contador negativo en un vector, el conteo es de 10 a 0 
+### 5.1 Analisis
+se requiere de un inicio para despues tener un proceso de un array que almacene 11 nuemros 
+para despues tener un ciclo de for i=10;i>=0;i=i-1 para despues tener otro proceso de que 
+A[10-i]=i y asi seguir el ciclo de for y despues imprimir rl array y dar fin.
+### 5.2 Diagrama 
+[![DFD5-P2-for.png](https://i.postimg.cc/zvN0Jky6/DFD5-P2-for.png)](https://postimg.cc/jw8zcPQ4)
+### 5.3 Entradas 
+un array de 11 numeros 
+### 5.4 Salidas 
+la impresion de los numeros en cuenta regresiva 
+### 5.5 Codigo 
+//Almacene un contador negativo en un vector, el conteo es de 10 a 0.
+
+void main() {
+  var arr = <int>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  int c = 10;
+  for (var i = 10; i >= 0; i--) {
+    arr[10 - i] = i;
+  }
+  print(arr);
+}
+#### 5.6 (WHILE)
+### 5.7 Diagrama
+[![DFD5-P2-while.png](https://i.postimg.cc/cH3dqd3T/DFD5-P2-while.png)](https://postimg.cc/47XDVkBh)
+### 5.8 Entradas 
+un array de 11 numeoros
+### 5.9 Salidas 
+la impresion de los numeros en cuenta regresiva 
+### 5.10 Codigo 
+//Almacene un contador negativo en un vector, el conteo es de 10 a 0.
+void main() {
+  var arr = <int>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  int c = 10;
+  while (c >= 0) {
+    arr[10 - c] = c;
+    c = c - 1;
+  }
+  print(arr);
+}
+#### 5.11 (DO/WHILE)
+### 5.12 Diagrama 
+[![DFD5-P2-do-while.png](https://i.postimg.cc/7hg7LvFn/DFD5-P2-do-while.png)](https://postimg.cc/H8kjSNsr)
+### 5.13 entradas 
+un array de 11 numeros 
+### 5.14 Salidas 
+la impresion de los numeros en cuenta regresiva 
+### 5.15 Codigo 
+void main() {
+  var arr = <int>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  int c = 10;
+  do {
+    arr[10 - c] = c;
+    c = c - 1;
+  } while (c >= 0);
+  print(arr);
+}//dowhile
+#### Ejercicio 6 (FOR) Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta 
+completar todos.
+### 6.1 Analisis 
+se requiere de un inicio para posteriormente un vector donde se almanecen 10 numeros para despues 
+tener un ciclo que nos indique i=0;i<=9;i=i+1 para despues que nos den un numero seguido de una condicion
+que nos indique que N%2=0 si es si un proceso de A[i]=N y el ciclo sigue y ya cuando sea no
+un mensaje que le digan que tiene que ser par y ya despues imprime todos los pares.
+### 6.2 Diagrama 
+[![DFD6-P2-for.png](https://i.postimg.cc/Pr6fwXmV/DFD6-P2-for.png)](https://postimg.cc/kBbdrdYW)
+### 6.3 Entradas 
+la entrada de un array y un numero 
+### 6.4 Salidas 
+los numeros pares 
+### 6.5 Codigo 
+listanumeros = []
+numerousuario = int(input("introdusca un numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca otro numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca un numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca otro numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca un numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca otro numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca un numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca otro numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca un numero: "))
+listanumeros.append(numerousuario)
+numerousuario = int(input("introdusca otro numero: "))
+listanumeros.append(numerousuario)
+
+print(f"los numeros son {listanumeros}")
+
+def pares(listanumeros):
+    listanumeros = []
+
+
+for n in listanumeros:
+    if n % 2 == 0:
+        print("Estos numeros son pares"+ "  " + str(n))
+#### 6.6 (WHILE)
+### 6.7 Diagrama 
+[![DFD6-P2-while.png](https://i.postimg.cc/7ZxBp4d4/DFD6-P2-while.png)](https://postimg.cc/RNDQHkvp)
+### 6.8 Entradas 
+la entrada de el array y un numero 
+### 6.9 Salidas 
+la salida de los numeros pares 
+### 6.10 Codigo 
+listanumeros = []
+numerousuario = int(input("introdusca un numero: "))
+listanumeros.append(numerousuario)
+decision = input("¿desea añadadir mas numeros?: ")
+
+while decision == "s" or decision == "s":
+    numerousuario = int(input("introdusca otro numero: "))
+    listanumeros.append(numerousuario)
+    decision = input("¿desea añadir otro numero?: ")
+
+
+print(f"los numeros son {listanumeros}")
+for n in listanumeros:
+    if n % 2 == 0:
+        print("Este numero de la lista es par" + str(n))
+        
+
+
+input("por favor, precione una tecla para salir.")
+#### 6.11 (DO/WHILE)
+### 6.12 Diagrama 
+[![DFD6-P2-do-while.png](https://i.postimg.cc/jjYjs86R/DFD6-P2-do-while.png)](https://postimg.cc/BjN3pBwz)
+### 6.13 Entradas 
+la entrada de el array y un numero 
+### 6.14 Salidas 
+los numeros pares 
+### 6.15 Codigo 
+print("PARES")
+numero_1 = int(input("Escriba un número entero: "))
+numero_2 = int(input(f"Escriba un número entero mayor o igual que {numero_1}: "))
+
+if numero_2 < numero_1:
+        print(f"¡Le he pedido un número entero mayor o igual que {numero_1}!")
+else:
+        for i in range(numero_1, numero_2 + 1):
+            if i % 2 == 0:
+                print(f"El número {i} es par.")
+                
+                
