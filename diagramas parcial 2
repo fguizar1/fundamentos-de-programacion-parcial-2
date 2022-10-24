@@ -1,0 +1,63 @@
+# presentacion
+## pobelmas resueltos en clase con diagramas de flujo 
+### Ejercicio 1. (wHILE) Contar de el 1 hasta el 10 y sumar los valores.
+#### 1.1 Analisis 
+se requiere un inicio para despues tener un contador que sea igual a 1 y una suma que sea igual a 0 estos seran nuestras variantes, 
+para despues tener una condicion si c<=10 si es si entonces s= c+s y despues tener quec=c+1 para despues volver a pedir la suma de el
+contador mas la suma y asi hasta llegar a 10 y si la condicion es no se imprime la suma y damos fin.
+### 1.2 Diagrama 
+[![DFD-1P2.png](https://i.postimg.cc/qBsLx4jv/DFD-1P2.png)](https://postimg.cc/3WwmKMss)
+#### 1.3 entradas 
+suma= 0 contador= 1 
+#### 1.4 salidas
+la suma de los valores 
+#### 1.5 Codigo
+void main(List<String> args) {
+  int s = 0, c = 1;
+
+  while (c <= 10) {
+    s += c;
+    c++;
+  }
+  print("El resultado de la suma de los valores es:$s");
+} //while
+### 1.6 (DO/WHILE)
+#### 1.7 Diagrama
+[![DFD1-P2-do-while.png](https://i.postimg.cc/52CTJZfY/DFD1-P2-do-while.png)](https://postimg.cc/68BYLb2t)
+#### 1.8 Entradas 
+suma = 0 contador = 1 
+#### 1.9 Salidas 
+la suma de los valores 
+#### 1.10 Codigo 
+oid main(List<String> args) {
+  int s = 0, c = 1;
+
+  do {
+    s += c;
+    c++;
+  } while (c <= 10);
+  print("El resultado de la suma de los valores es:$s");
+}//Do whilesss
+### 1.11 (FOR)
+#### 1.12 Diagrama 
+[![DFD1-P2-for.png](https://i.postimg.cc/t4BK2hRD/DFD1-P2-for.png)](https://postimg.cc/75TtLJ2T)
+#### 1.13 Entradas 
+tenemos la entrada de un for y de una una suma = a la suma mas el for 
+#### 1.14 Salida 
+la suma de los valores 
+#### 1.15 Codigo 
+
+void main(List<String> args) {
+  int s = 0;
+  for (var i = 1; i <= 10; i++) {
+    s += i;
+  }
+  print("La suma de los valores es: $s");
+}//for
+
+### Ejercico 2 (FOR) obtenga la suma de los primeros cinco numeros pares 
+#### 2.1 Analisis 
+se utiliza un inicio para despues tener que la suma = 0 despues tener un for que nos indique que i=2;i<=10;i=i+2
+para despues hacer el rpoceso de s=s+i y serguir con el cilco y posteirorimente imprimir la suma y dar fin 
+#### 2.2 Diagrama 
+[![DFD2-P2-for.png](https://i.postimg.cc/PfYYYHdr/DFD2-P2-for.png)](https://postimg.cc/mhZPW0c0)
