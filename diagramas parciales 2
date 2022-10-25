@@ -416,4 +416,95 @@ la entrada de el array y de el alumno
 la entrada de el array y de el alumno 
 ### 7.15 Codigo 
 
-#### Ejercicio 8 (FOR) 
+#### Ejercicio 8 (FOR) Capturar n numeros en el rango [LI,LIS] donde:
+ LI=limite inferior y LS=Limite superior, para Li<LS y Li>0, 
+obtenga
+la cantidad de numeros pares y su promedio. 
+la cantidad de numeros impares y su promedio. 
+cual es el promedio mayor
+### 8.1 Analisis 
+comenzamos con un incio para despues tener un proceso que diga que S_P=0; C_P=0; P_P=0
+S_I=0; C_I=0; P_I=0 y despues una impresion que nos de el valor de li para introducir su valor 
+despues una condicion donde li>0 si es no mandamos una impresion que le diga que "el numero 
+ingresado no es >0" y se regresa a pedir li y si es si entonces pedimos el valor de ls 
+para despues una condicion que nos diga que ls>0 si es no decimos que "el numero ingresado 
+no es >0" y si es si le pedimos al usuario que ingrese una cantidad, si el numero es N>0
+si es no le decimos "el numero ingresado no es >0" y si es si hacemos nuestro ciclo de for para 
+para despues pedirle al usuario que ingrese un numero entero positivo, despues una condicion 
+si Num>0 si es no decimos "el numeor que ingresaste no es >0" y si es si otra condicion que 
+num>=li y num<=ls si es no pedimos otravez el nuemro entero positivo y si es si otra condicion 
+que nos diga que num%2==0 si es no mandamos una impresion que diga que es impar y el siguiente 
+proceso S_I=  S_I+Num C_I= C_I+1 pero si es si mandamos una impresion que diga que es par y el 
+siguente proceso S_P=  S_P+Num C_P= C_P+1 y despues seguir con el ciclo for i=0;i<=N;i++ y despues 
+otro proceso P_P=  S_P / C_P P_I=  S_I / C_I para despues pedir una condicion que nos diga que 
+p_p>p_i si es no imprimimos P_I es mayor y damos fin pero si es si imprimimos p_P es mayor 
+y damos fin.
+### 8.2 Diagrama 
+[![DFD8-P2-for.png](https://i.postimg.cc/50QfWs7q/DFD8-P2-for.png)](https://postimg.cc/ftsGxfhJ)
+### 8.3 Entradas
+la entrada de li, ls y dos numeros 
+### 8.4 Salidas
+si es par o es impar 
+### 5.5 codigo 
+
+#### 8.6 (WHILE)
+### 8.7 Diagrama 
+[![PDF8-P-while.jpg](https://i.postimg.cc/hjc1HYPN/PDF8-P-while.jpg)](https://postimg.cc/4K2ccBc1)
+### 8.8 Entradas 
+la entrada de li, ls y dos numeros 
+### 8.9 Salidas
+Salidas si es par o es impar 
+### 8.10 Codigo 
+
+#### 8.11 (DO/WHILE)
+### 8.12 Diagrama 
+[![DFD8-P2-do-while.jpg](https://i.postimg.cc/YCx6Q3x3/DFD8-P2-do-while.jpg)](https://postimg.cc/w17RpDZy)
+### 8.13 Entradas 
+la entrada de li, ls y dos numeros 
+### 8.14 Salidas
+Salidas si es par o es impar
+### 8.15 Codigo 
+
+#### Ejercicio 9 Obten la frecuencia de n calificaiones entre [1,10]. inique 
+la cantidad dereprobados y la cantidad de aprobados. el promedio de aprobados 
+y el promedio general.
+### 9.1 Analisis
+damos un incio para despues tener el proceso de cal de [1,10] para despues que nos den el 
+numero de calificaiones, despues una condicion si es N>0 si es no una impresion que diga 
+que el nuemro debe ser mayor a 0 y si es si el cliclo de for i=0; i<=n; i++ y despues un 
+proceso que calif [1,10] y que nos de cal y despues una condicion c>0 and c<=10
+si es no una impresion que diga que tiene que ser entre 1 y 10 y si es si un proceso 
+de cal [c]++ para despues y volver al for para imprimir cal y despues tener un proceso 
+CR=0 CA=0 PA=0 PG=0 SR=0 SA=0  y que nos den N para despues tener otro ciclo de for que nos 
+indique i=0; i<=n; i++ para despues pedir un numero entre 1 y 10 despues una condicion 
+num>0 and num<=10 si es no una impresion que les diga que debe estar entre 1 y 10 y si es si 
+otra condicion Num>=6 si es no un proceso de CR=CR+1 SR=SR+NUM para despues ir al ciclo for 
+y si es si CA=CA+1 SA=SA+NUM y entrar al ciclo de for para despues imprimir CA, CR para despues otro 
+proceso de PA=SA/CA PR=SR/CR y despues otro proceso PG=(PA+PR)2 y despues dar fin.
+### 9.2 Diagrama 
+[![DFD9-P2-for.jpg](https://i.postimg.cc/kXcJP1FK/DFD9-P2-for.jpg)](https://postimg.cc/fJVnxvPR)
+### 9.3 Entradas 
+tres nuemros y la calificaion 
+### 9.4 Salidas
+promedio de aprobados y promedio general 
+### 9.5 Codigo
+
+#### 9.6 (WHILE)
+### 9.7 Diagrama 
+[![DFD9-P2-while.jpg](https://i.postimg.cc/nzz7q9Fw/DFD9-P2-while.jpg)](https://postimg.cc/Ny35cMr1)
+### 9.8 Entradas
+tres nuemros y la calificaion 
+### 9.9 Salidas 
+promedio de aprobados y promedio general 
+### 9.10 Codigo 
+
+#### 9.11 (DO/WLILE)
+### 9.12 Diagrama 
+[![DFD9-P2-do-while.jpg](https://i.postimg.cc/GhBWqXgb/DFD9-P2-do-while.jpg)](https://postimg.cc/Tp6NPJXs)
+### 9.13 Entradas
+tres nuemros y la calificaion 
+### 9.14 Salidas 
+promedio de aprobados y promedio general 
+### 9.15 Codigo 
+
+
